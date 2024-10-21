@@ -30,16 +30,15 @@ uint32_t get_tick();
 int main(void) {
 	timebase_init();
 
-	while(1) {
+	while (1) {
 		delay(1);
-		ITMPrint("a second occurred\n\r");
+		ITMPrint("a second occurred\n");
 	}
 }
 
 void SysTick_Handler() {
 	tick_increment();
 }
-
 
 void delay(uint32_t delay) {
 	uint32_t tick_start = get_tick();
@@ -48,7 +47,8 @@ void delay(uint32_t delay) {
 		delay += tick_frequency;
 	}
 
-	while (get_tick() - tick_start < delay);
+	while (get_tick() - tick_start < delay)
+		;
 
 }
 
