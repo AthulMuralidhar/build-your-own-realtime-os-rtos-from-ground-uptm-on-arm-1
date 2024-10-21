@@ -197,18 +197,23 @@ void close_valve() {
 void task0() {
 	while (1) {
 		Task0_profiler++;
+		close_valve();
+		run_motor();
 	}
 }
 
 void task1() {
 	while (1) {
 		Task1_profiler++;
+		stop_motor();
+
 	}
 }
 
 void task2() {
 	while (1) {
 		Task2_profiler++;
+		open_valve();
 	}
 }
 
