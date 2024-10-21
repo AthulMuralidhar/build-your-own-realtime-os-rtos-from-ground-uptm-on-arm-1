@@ -2009,7 +2009,6 @@ __STATIC_INLINE uint32_t SysTick_Config(uint32_t ticks)
 //		}
 //		return (ch);
 //	}
-
 	/**
 	 \brief   ITM Receive Character
 	 \details Inputs a character via the external variable \ref ITM_RxBuffer.

@@ -24,7 +24,6 @@
 // limitations under the License.
 //
 //------------------------------------------------------------------------------
-
 #ifndef __CMSIS_ICCARM_H__
 #define __CMSIS_ICCARM_H__
 
